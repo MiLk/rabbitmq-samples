@@ -12,9 +12,11 @@ There are several different scripts :
 ## Create your application vhost :
 
 First, create a vhost for your application :
+```bash
     rabbitmqctl add_vhost /myapp
     rabbitmqctl add_user myuser mypasswd
     rabbitmqctl set_permissions -p /myapp myuser ".*" ".*" ".*"
+```
 
 ## Requirements
 
